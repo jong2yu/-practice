@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Slide</title>
+  <style>
+    * {
+      margin: 0;padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    body {
+      width: 1200px;
+      margin:0 auto;
+      text-align: center;
+      background: #fff;
+      color:#222328;
+    }
+    .menu .main {
+      float:left;
+      width: 25%;
+    }
+    .menu a {
+      display: block;
+      height: 40px;
+      line-height:40px;
+      background: #000;
+      color:#fff;
+      font-weight: bold;
+      transition: .2s;
+    }
+    .menu a:hover {
+      background: #fff;
+      color:#000;
+    }
+  </style>
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li class="main"><a href="#">main</a>
+        <ul class="sub">
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+        </ul>
+      </li>
+      <li class="main"><a href="#">main</a>
+        <ul class="sub">
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+        </ul>
+      </li>
+      <li class="main"><a href="#">main</a>
+        <ul class="sub">
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+        </ul>
+      </li>
+      <li class="main"><a href="#">main</a>
+        <ul class="sub">
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+          <li><a href="#">sub</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="js/jquery-1.12.3.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".menu .sub").hide();
+
+      $(".menu .main").mouseover(function(){
+        $(".menu .sub").stop().slideDown(300)
+      }).mouseout(function(){
+        $(".menu .sub").stop().slideUp(300)
+      })
+    });
+  </script>
+</body>
+</html>

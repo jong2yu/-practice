@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal</title>
+  <style>
+    * {
+      margin: 0;padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    body {
+      width: 1200px;
+      text-align: center;
+      margin:0 auto;
+    }
+    #modal {
+      display: none;
+    }
+    #modal div {
+      width: 600px;
+      height: 300px;
+      margin:0 auto;
+    }
+    .boxone {
+      background: skyblue;
+    }
+    .boxtwo {
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="btn">modal</a>
+  <div id="modal">
+    <button class="close">close</button>
+    <div class="boxone">box1</div>
+    <div class="boxtwo">box2</div>
+  </div>
+
+  <script src="js/jquery-1.12.3.js"></script>
+  <script>
+    var modal = $("#modal");
+
+    $(".btn").click(function() {
+      modal.show();
+    });
+    $(".close").click(function() {
+      modal.hide();
+    });
+  </script>
+</body>
+</html>
