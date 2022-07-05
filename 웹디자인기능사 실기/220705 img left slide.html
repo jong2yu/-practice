@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>img left slide</title>
+  <style>
+    * {
+      margin: 0;  padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    body {text-align: center;}
+
+    .slide {
+      width: 640px;
+      height: 360px;
+      overflow: hidden;
+      margin:160px auto 0;
+    }
+
+    .slide .wrap {
+      width: 300%;
+      height: 100%;
+    }
+    
+    .slide img {
+      float: left;
+      width: 640px;
+      height: 360px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="wrap">
+      <img src="img/img01.jpg" alt="img1">
+      <img src="img/img02.jpg" alt="img2">
+      <img src="img/img03.jpg" alt="img3">
+    </div>
+  </div>
+
+  <script src="js/jquery-1.12.3.js"></script>
+  <script>
+    $(document).ready(function(){
+      setInterval(function(){
+        $(".slide .wrap").animate({marginLeft:"-=640px"}, function(){
+          $(".slide .wrap img:first").appendTo(".slide .wrap");
+          $(".slide .wrap").css("margin-left","0px");
+        });
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
