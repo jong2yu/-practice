@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+* {
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: #fff;
+  color:#222328;
+  font-family: '맑은 고딕', san-serif;
+  text-align: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+h1 { font-size: 16px; }
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin:0 auto;
+}
+
+/* Sub Menu sbm */
+.box.sbm {
+  width: 1200px;
+  margin:100px auto;
+}
+.box.sbm .logo {
+  float:left;
+}
+.box.sbm .menu {
+  float:right;
+}
+.box.sbm .main {
+  float:left;
+}
+.box.sbm .menu a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height:40px;
+  background: #000;
+  color:#fff;
+  font-weight: bold;
+}
+.box.sbm .menu a:hover {
+  background: #fff;
+  color:#000;
+}
+
+/* Img Slide Top ist */
+.box.ist .slide {
+  width: 640px;
+  height: 360px;
+  overflow: hidden;
+  margin:160px auto;
+}
+.box.ist .slide .wrap {
+  width: 100%;
+  height: 300%;
+}
+.box.ist .slide .wrap li {
+  position: relative;
+}
+.box.ist .slide img {
+  width: 640px;
+  height: 360px;
+  display: block;
+}
+.box.ist .slide span {
+  position: absolute;
+  right: 0;top: 0;
+  background: rgba(255,255,255,.6);
+}
+
+/* Img Slide Left isl */
+.box.isl .slide {
+  width: 640px;
+  height: 360px;
+  overflow: hidden;
+  margin:160px auto;
+}
+.box.isl .slide .wrap {
+  width: 300%;
+  height: 100%;
+}
+.box.isl .slide .wrap li {
+  float: left;
+  position: relative;
+}
+.box.isl .slide img {
+  width: 640px;
+  height: 360px;
+  display: block;
+}
+.box.isl .slide span {
+  position: absolute;
+  right: 0;top: 0;
+  background: rgba(255,255,255,.6);
+}
+
+/* Img Slide Fade isf */
+.box.isf .slide {
+  width: 640px;
+  height: 360px;
+  /* overflow: hidden; */
+  margin:160px auto;
+}
+.box.isf .slide .wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.box.isf .slide .wrap li {
+  position: absolute;
+}
+.box.isf .slide img {
+  width: 640px;
+  height: 360px;
+  display: block;
+}
+.box.isf .slide span {
+  position: absolute;
+  left: 0;top: 0;
+  background: rgba(255,255,255,.6);
+}
+
+/* Tab tbm */
+/* Modal mdp */
