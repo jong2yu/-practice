@@ -20,6 +20,7 @@ header {
   height: 100px;
   padding:30px 0;
   border: 1px solid #000;
+  float: left;
 }
 .logo {
   float: left;
@@ -43,9 +44,9 @@ header {
   background: #222328;
   color:#fff;
 }
-.menu .sub {
+/* .menu .sub {
   display: none;
-}
+} */
 
 /* B */
 .slide {
