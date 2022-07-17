@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+* {
+  margin: 0;padding: 0;
+  text-decoration: none;
+  list-style:none;
+  box-sizing: border-box;
+}
+body {
+  width: 1200px;
+  margin:0 auto;
+  text-align: center;
+  background: #fff;
+  color:#222328;
+}
+a, img {
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding:30px 40px;
+  border: 1px solid #000;
+}
+.logo {
+  float:left;
+}
+.menu {
+  float:right;
+}
+.menu .main {
+  float:left;
+}
+.menu .main > a {
+  border: 1px solid #000;
+  background: purple;
+  color:#fff;
+}
+.menu a {
+  width: 160px;
+  height: 40px;
+  line-height:40px;
+  background: #fff;
+  color:#222328;
+  transition:.2s;
+}
+.menu a:hover {
+  background: #222328;
+  color:#fff;
+  font-weight: bold;
+}
+.menu .sub {
+  position: fixed;
+  z-index: 2;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.slide img {
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide p {
+  position: absolute;
+  left: 43%;top: 45%;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(255,255,255,.8);
+  border-radius: 30px;
+  color:#222328;
+  font-weight: bold;
+}
+
+.contents {
+  width: 100%;
+  height: 200px;
+}
+.contents > div {
+  float:left;
+  width: 33.3333%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+.tab {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.tab .wrap {
+  float:left;
+  width: 50%;
+}
+.tab .title {
+  width: 88%;
+  height: 40px;
+  line-height:40px;
+  margin:0 auto;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-bottom:none;
+  transition:.2s;
+}
+.tab .gallery .title {
+  margin-left:-13px;
+}
+.tab .title:hover {
+  background: rgb(169, 228, 255);
+  cursor:pointer;
+}
+.tab .box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top:1px solid #000;
+  background: #fff;
+}
+.tab .notice li {
+  width: 100%;
+  height:40px;
+  line-height:40px;
+  border-bottom:1px dotted #000;
+}
+.tab .notice li a {
+  float:left;
+  margin-left:40px;
+}
+.tab .notice li p {
+  float:right;
+  margin-right:40px;
+}
+.tab .gallery li {
+  float:left;
+  margin:40px 0 0 40px;
+}
+.tab .gallery .box {
+  z-index: -1;
+}
+.tab .wrap.active .title {
+  background: rgb(169, 228, 255);
+}
+.tab .wrap.active .box {
+  z-index: 2;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+}
+footer > div {
+  float:left;
+  height: 100%;
+  border: 1px solid #000;
+}
+footer .logo,
+footer .sns {
+  width: 25%;
+}
+footer .copy {
+  width: 50%;
+}
+
+#modal {
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  z-index: 10;
+}
+#modal .wrap {
+  position: absolute;
+  left: 34%;top: 30%;
+  width: 600px;
+  height: 300px;
+  background: #fff;
+}
+#modal h4 {
+  font-size:36px;
+  margin:16px 0;
+}
+#modal p {
+  font-size:20px;
+  margin:16px 0;
+}
+#modal button {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background: orange;
+  color:#fff;
+  font-weight: bold;
+  font-size:20px;
+  margin-top:16px;
+  border-radius: 10px;
+  transition:.2s;
+}
+#modal button:hover {
+  background: orangered;
+  cursor:pointer;
+}
