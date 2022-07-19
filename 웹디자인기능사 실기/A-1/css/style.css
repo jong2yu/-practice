@@ -177,6 +177,12 @@ header {
   color:#222328;
   border-radius: 16px;
 }
+.other img {
+  transition:.2s;
+}
+.other:hover img {
+  opacity: .6;
+}
 
 footer {
   width: 100%;
