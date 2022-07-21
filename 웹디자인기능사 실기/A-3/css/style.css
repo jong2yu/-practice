@@ -1,0 +1,256 @@
+@charset "utf-8";
+* {
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  width: 1200px;
+  margin:0 auto;
+  text-align: center;
+  background: #fff;
+  color:#333;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding:30px 40px;
+}
+header .logo {
+  float:left;
+}
+header .menu {
+  float:right;
+}
+header .menu .main {
+  float:left;
+}
+header .menu a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height:40px;
+  background: #0066ad;
+  color:#fff;
+  transition:.2s;
+}
+header .menu a:hover {
+  background: #30a3f3;
+}
+header .menu .main > a {
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+}
+header .menu .sub {
+  width: 160px;
+  height: 160px;
+  background: #0066ad;
+  position: fixed;
+  z-index: 6;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.slide img {
+  position: absolute;
+  left: 0;top: 0;
+}
+.slide p {
+  position: absolute;
+  left: 40%;top: 40%;
+  background: rgba(255,255,255,.8);
+  color:#333;
+  font-weight: bold;
+  font-size:20px;
+  border-radius: 16px;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.contents {
+  width: 100%;
+  height: 200px;
+}
+.contents > div {
+  float:left;
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tab {
+  position: relative;
+}
+.tab .wrap {
+  float:left;
+  width: 40%;
+  height: 100%;
+}
+.tab .title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #0066ad;
+  color:#fff;
+  font-weight: bold;
+  border-radius: 16px 16px 0 0;
+  transition:.2s;
+}
+.tab .title:hover {
+  cursor:pointer;
+  background: #30a3f3;
+}
+.tab .box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-top: 1px solid #000;
+}
+.tab .gallery .box li {
+  float:left;
+  margin:35px 0 0 33px;
+}
+.tab .gallery .box {
+  z-index: -1;
+}
+.tab .notice .box li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px dotted #000;
+}
+.tab .notice .box li:nth-child(even) {
+  background: #30a3f3;
+}
+.tab .notice .box a {
+  float:left;
+  margin-left:20px;
+}
+.tab .notice .box p {
+  float:right;
+  margin-right:20px;
+}
+.tab .wrap.active .title {
+  background: #30a3f3;
+}
+.tab .wrap.active .box {
+  z-index: 6;
+}
+.tab .gallery .box li img {
+  transition:.2s;
+}
+.tab .gallery .box li:hover img {
+  transform: scale(1.06);
+}
+.contents .other {
+  position: relative;
+}
+.contents .other p {
+  position: absolute;
+  right: 6%;top: 40%;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  background: #0066ad;
+  border-radius: 16px;
+  font-size:16px;
+  font-weight: bold;
+  color:#fff;
+  box-shadow: 0 0 10px 1px #30a3f3;
+}
+.contents .other img {
+  transition:.2s;
+}
+.contents .other a:hover img {
+  transform: scale(1.06);
+  opacity: .6;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+}
+footer .logo {
+  float:left;
+  width: 25%;
+  height: 100%;
+}
+footer .logo img {
+  margin-top:30px;
+}
+footer .other {
+  float:right;
+  width: 75%;
+  height: 100%;
+}
+footer .other > div {
+  width: 100%;
+  height: 50%;
+}
+footer .menu {
+  border: 1px dotted #000;
+  border-top: none;
+}
+footer .menu ul {
+  width: 461px;
+  height: 100%;
+  margin:0 auto;
+}
+footer .menu li {
+  float:left;
+  line-height:50px;
+}
+footer .menu li:nth-child(2) {
+  margin:0 120px;
+}
+footer .copy {
+  border: 1px dotted #000;
+  border-top: none;
+}
+footer .copy p {
+  line-height:50px;
+}
+
+#modal {
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  z-index: 10;
+}
+#modal .wrap {
+  position: absolute;
+  left: 30%;top: 30%;
+  width: 600px;
+  height: 300px;
+  background: #fff;
+}
+#modal h4 {
+  margin:30px auto;
+  font-size:26px;
+}
+#modal button {
+  border: none;
+  background: #0066ad;
+  width: 160px;
+  height: 40px;
+  color:#fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top:30px;
+  border-radius: 16px;
+  transition:.2s;
+}
+#modal button:hover {
+  cursor: pointer;
+  background: #30a3f3;
+}
