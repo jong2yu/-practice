@@ -1,0 +1,228 @@
+@charset "utf-8";
+* {
+  margin: 0;padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  width: 1200px;
+  margin:0 auto;
+  background: #f2f2f2;
+  color:#333;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 30px 40px;
+}
+header .logo {
+  float:left;
+}
+header .menu {
+  float:right;
+}
+header .menu .main {
+  float:left;
+}
+header .menu a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  background: #ff5050;
+  color:#fff;
+  transition:.2s;
+}
+header .menu a:hover {
+  background: #ffc000;
+  font-weight: bold;
+}
+header .menu .main > a {
+  font-weight: bold;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid #000;
+}
+header .menu .sub {
+  width: 160px;
+  height: 120px;
+  background: #ff5050;
+  position: absolute;
+  z-index: 6;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.slide img {
+  position: absolute;
+  left: 0;top: 0;
+}
+.slide p {
+  position: absolute;
+  left: 35%;top: 45%;
+  width: 300px;
+  height: 40px;
+  line-height:40px;
+  background: rgba(255,255,255,.8);
+  border-radius: 16px 16px 0 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#333;
+}
+
+.contents {
+  width: 100%;
+  height: 200px;
+}
+.contents > div {
+  float:left;
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery {
+  border-left: 1px dotted #000;
+  border-right: 1px dotted #000;
+}
+.contents .title {
+  width: 100%;
+  height: 40px;
+  line-height:40px;
+  background: #ff5050;
+  color:#fff;
+  font-weight: bold;
+}
+.notice li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.notice li:nth-child(even) {
+  background: #5b9bd5;
+}
+.notice a {
+  float:left;
+  margin-left:10px;
+}
+.notice p {
+  float:right;
+  margin-right:10px;
+}
+.gallery li {
+  float:left;
+  margin:27px 0 0 33px;
+  transition:.2s;
+}
+.gallery li:hover {
+  opacity: .6;
+  transform: scale(1.06);
+}
+.direct {
+  background: #5b9bd5;
+}
+.direct a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.direct img {
+  transition:.2s;
+}
+.direct:hover img {
+  opacity: .6;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #ff5050;
+}
+footer .other {
+  float:left;
+  width: 75%;
+  height: 100%;
+  border: 1px solid #000;
+}
+footer .other > div {
+  width: 100%;
+  height: 50%;
+}
+footer .family {
+  float:right;
+  width: 25%;
+  height: 100%;
+  border: 1px solid #000;
+  position: relative;
+}
+footer .menu {
+  border-bottom: 1px dotted #000;
+}
+footer .menu ul {
+  margin:0 219px;
+}
+footer .menu li {
+  float:left;
+  margin:15px 40px;
+}
+footer .menu a {
+  color:#fff;
+}
+footer .copy {
+  position: relative;
+}
+footer .copy p {
+  position: absolute;
+  left: 28%;top: 25%;
+  color:#fff;
+}
+footer #family {
+  position: absolute;
+  left: 23%;top: 35%;
+  width: 160px;
+  height: 30px;
+}
+
+#modal {
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+}
+#modal .wrap {
+  background: #fff;
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  left: 35%;top: 30%;
+  border-radius: 16px 0 16px 0;
+}
+#modal .title {
+  margin: 30px auto;
+  font-size: 30px;
+}
+#modal p {
+  margin:20px auto;
+}
+#modal button {
+  width: 200px;
+  height: 40px;
+  margin-top:20px;
+  border: none;
+  background: #ff5050;
+  font-size:20px;
+  color:#fff;
+  font-weight: bold;
+  border-radius: 10px;
+  transition:.2s;
+}
+#modal button:hover {
+  background: #ffc000;
+  cursor: pointer;
+  border-radius: 10px 10px 0 10px;
+}
