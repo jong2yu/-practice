@@ -17,5 +17,13 @@ $(document).ready(function(){
   $(".tab .title").click(function(){
     $(this).parent().addClass("active").siblings().removeClass("active")
   });
+  
+  $("#modal").hide();
+  $(".notice a:first").click(function(){
+    $("#modal").show();
+  });
+  $("#modal button").click(function(){
+    $("#modal").hide();
+  });
 
 });
