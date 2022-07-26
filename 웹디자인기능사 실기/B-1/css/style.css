@@ -221,9 +221,9 @@ footer p {
 }
 #modal .wrap {
   position: absolute;
-  left: 35%;top: 30%;
-  width: 600px;
-  height: 300px;
+  left: 30%;top: 30%;
+  width: 800px;
+  height: 400px;
   background: #fff;
 }
 #modal h4 {
@@ -233,7 +233,7 @@ footer p {
 #modal button {
   width: 160px;
   height: 40px;
-  background: #00C73C;
+  background: #0076be;
   border: none;
   margin-top: 30px;
   color:#fff;
