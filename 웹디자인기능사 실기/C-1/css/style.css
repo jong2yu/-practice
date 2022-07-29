@@ -1,0 +1,227 @@
+@charset "utf-8";
+* {
+  margin: 0;padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  width: 1000px;
+  margin:0 auto;
+  text-align: center;
+  background: #fff;
+  color:#222328;
+}
+
+header {
+  float:left;
+  width: 200px;
+  height: 650px;
+  overflow: hidden;
+}
+main {
+  float:right;
+  width: 800px;
+  height: 650px;
+}
+
+header .logo {
+  display: block;
+  margin:20px auto;
+}
+header .menu a {
+  display: block;
+  margin:0 auto;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: blue;
+  color:#fff;
+  transition:.2s;
+}
+header .menu a:hover {
+  background: purple;
+}
+header .menu .main > a {
+  font-weight: bold;
+  border-radius: 16px 16px 0 0;
+  border: 1px dotted #fff;
+}
+header .bg {
+  width: 100%;
+  height: 410px;
+  background: gray;
+}
+
+.slide {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.slide img {
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide p {
+  position: absolute;
+  left: 30%;top: 45%;
+  width: 300px;
+  height: 40px;
+  line-height:40px;
+  background: rgba(255,255,255,.8);
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#222328;
+}
+
+.contents {
+  width: 100%;
+  height: 200px;
+}
+.contents > div {
+  height: 100%;
+  overflow: hidden;
+  float:left;
+}
+
+.tab {
+  position: relative;
+  width: 400px;
+}
+.tab .title {
+  float:left;
+  width: 40%;
+  height: 40px;
+  line-height: 40px;
+  background: blue;
+  color:#fff;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px dotted #fff;
+  transition:.2s;
+}
+.tab .box {
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  top: 40px;
+  background: #fff;
+  border-top: 1px dotted #000;
+}
+.tab .notice li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px dotted #000;
+}
+.tab .notice li a {
+  float:left;
+  font-size: 16px;
+  margin-left:20px;
+}
+.tab .notice li p {
+  float:right;
+  font-size: 16px;
+  margin-right:20px;
+}
+.tab .gallery li {
+  float:left;
+  margin:30px 0 0 30px;
+}
+.tab .gallery img {
+  width: 90px;
+  height: 90px;
+}
+.tab .gallery .box {
+  z-index: -1;
+}
+.tab .title:hover {
+  background: purple;
+  cursor: pointer;
+}
+.tab .wrap.active .title {
+  background: purple;
+}
+.tab .wrap.active .box {
+  z-index: 6;
+}
+
+.contents .other {
+  width: 200px;
+}
+.contents .other img {
+  transition:.2s;
+}
+.contents .other:hover img {
+  transform: scale(1.06);
+  opacity: .6;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px dotted #000;
+  border-top: 1px dotted #000;
+}
+footer .logo {
+  float:left;
+  margin:30px auto;
+}
+footer .other {
+  float:left;
+  width: 600px;
+  height: 100%;
+}
+footer .other .menu,
+footer .other p {
+  width: 100%;
+  height: 50%;
+}
+footer .other .menu a {
+  float:left;
+  margin:15px 0 0 100px;
+}
+footer .other p {
+  line-height: 50px;
+  border-top: 1px dotted #000;
+}
+
+#modal {
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  z-index: 10;
+}
+#modal .wrap {
+  position: absolute;
+  left: 35%;top: 30%;
+  width: 600px;
+  height: 300px;
+  background: #fff;
+  border-radius: 16px 0 16px 0;
+}
+#modal h4 {
+  margin:30px auto 30px;
+  font-size: 30px;
+}
+#modal button {
+  border:none;
+  background: blue;
+  color:#fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 16px;
+  margin-top:40px;
+  width: 160px;
+  height: 40px;
+  transition:.2s;
+}
+#modal button:hover {
+  background: purple;
+  border-radius: 16px 16px 0 16px;
+  cursor: pointer;
+}
